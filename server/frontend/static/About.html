@@ -1,68 +1,108 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <!-- Link the style sheet here -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Car Dealership Portal</title>
+    <!-- REQUIRED CSS LINKS -->
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
-    <div class="container-fluid">
-      <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
-        </div>
-      </div>
+<body>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Car Dealership Portal</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-expand navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
+    </nav>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+    <!-- Complete About Us Section Header -->
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="mb-4">About Us</h1>
+                <p class="lead">
+                    Welcome to the Car Dealership Portal, your premier online destination for transparent car buying evaluations and nationwide customer feedback. Established with a vision to revolutionize the automotive retail experience, our platform bridges the gap between local dealerships and consumers by offering authentic user reviews, robust inventory lookups, and clear data metrics.
+                </p>
+                <p>
+                    Our mission is to empower car buyers with extensive, verifiable review resources and integrated sentiment diagnostics, allowing everyday drivers to make informed purchasing choices with total confidence. We partner closely with authorized automotive dealers across all fifty states to showcase reliable service centers, highly professional sales consultants, and comprehensive vehicle inventories. Whether you are looking for a fuel-efficient sedan, a heavy-duty truck, or family-oriented SUVs, our portal simplifies your pre-purchase journey through reliable community-driven insights.
+                </p>
+            </div>
         </div>
-      </div>
-    </div>
-    </div>
-    </div>
-    
-</div>
 
+        <!-- Team Members Grid Layout -->
+        <h2 class="mt-5 mb-4 text-center">Meet Our Professional Team</h2>
+        <div class="row g-4">
+            
+            <!-- Team Member 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center">
+                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=400&h=400" class="card-img-top p-3 rounded-circle" alt="Alex Johnson">
+                    <div class="card-body">
+                        <h4 class="card-title">Alex Johnson</h4>
+                        <h6 class="text-primary mb-2">Chief Executive Officer</h6>
+                        <p class="card-text text-muted">
+                            Alex brings over fifteen years of senior executive management experience in the automotive tech sector, driving corporate vision and platform growth.
+                        </p>
+                        <p class="card-text fw-bold">Email: alex.johnson@dealership-portal.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400" class="card-img-top p-3 rounded-circle" alt="Sarah Lee">
+                    <div class="card-body">
+                        <h4 class="card-title">Sarah Lee</h4>
+                        <h6 class="text-primary mb-2">Lead Full-Stack Architect</h6>
+                        <p class="card-text text-muted">
+                            Sarah oversees backend infrastructure scaling and interactive React single-page frameworks, assuring secure session logins and high API availability.
+                        </p>
+                        <p class="card-text fw-bold">Email: sarah.lee@dealership-portal.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm text-center">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400" class="card-img-top p-3 rounded-circle" alt="David Kim">
+                    <div class="card-body">
+                        <h4 class="card-title">David Kim</h4>
+                        <h6 class="text-primary mb-2">Director of Product Quality</h6>
+                        <p class="card-text text-muted">
+                            David ensures rigorous automated software tests, refining product performance metrics, cloud microservice pipelines, and community outreach.
+                        </p>
+                        <p class="card-text fw-bold">Email: david.kim@dealership-portal.com</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p class="mb-0">&copy; 2026 Car Dealership Portal. All Rights Reserved.</p>
+    </footer>
+
+</body>
 </html>
